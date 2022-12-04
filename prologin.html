@@ -1,0 +1,92 @@
+<html>
+    <head>
+    <title>LOGIN PAGE</title>
+    <style>
+    body{
+    margin:0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+background-image: url("https://img.freepik.com/free-photo/healthy-vegetables-dryfruits-oil-raw-fish-wooden-table_23-2148026882.jpg?w=1380&t=st=1670139924~exp=1670140524~hmac=12a6f53a63024fac880e049f2f8911be7a72adc244b319585929dcc464778218");
+    
+    background-size: cover;
+    background-position: center;
+}
+.form{
+    border-style: groove;
+    width: 300px;
+   box-shadow: 0 0 4px 0 hwb(0 55% 44% / 0.658);
+   background:white;
+   border-radius: 11px;
+    font-size: 18px;
+    border : 1px solid #999;
+   padding: 20px;
+   margin: 8% auto;
+   border-style: groove;
+   text-align: center;
+   padding: 20px;
+   margin: 8% auto;
+   text-align: center;
+}
+.form h1{
+    color:darkmagenta;
+    margin-bottom:30px;
+    
+}
+.box{
+    border: 20px;
+    padding: 9px;
+    margin: 10px;
+    width: 90%;
+   
+    border: 1px solid rgb(15, 11, 11);
+    
+}
+button{
+    
+    width: 90%;
+    padding: 10px;
+   border-radius: 20px;
+   font-size: 15px;
+   margin: 10px 0;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.button1{
+   width : 90%;
+    padding : 10px;
+    margin: 5px;
+    border-radius: 11px;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    border : 1px solid #999;
+    background-image: linear-gradient(to right, rgba(236, 75, 196, 0.642),rgba(242, 90, 186, 0.751),#e05da0);
+    border-style: groove;
+    cursor: pointer;
+}
+
+
+img{
+    width: 70px;
+    margin-top: 20px;
+   
+}
+</style>
+     
+    </head>
+    <body>
+       
+        <div class="form">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZYZRnFinCRXJw89SIRVXYnX27jjH5CmpqEgxAaKUfAGyD7kACvXutDSl51VPBaSPlLTE&usqp=CAU">
+             <h1>LOGIN</h1>
+             <form method='get' action="/loginsubmit">
+
+                <input type="email" class="box" placeholder="Enter Mail" name=username required><br>
+                <input type="password" class="box" placeholder="Enter password" name=password required> <br>
+                <input type="submit" class="button1" value="submit"/>
+             </form>
+        </div>
+    </body>
+</html>
