@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>SIGNUP PAGE</title>
+    <style>
+    body{
+	
+	background-image: url("https://img.freepik.com/free-photo/healthy-vegetables-dryfruits-oil-raw-fish-wooden-table_23-2148026882.jpg?w=1380&t=st=1670139924~exp=1670140524~hmac=12a6f53a63024fac880e049f2f8911be7a72adc244b319585929dcc464778218");
+
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form{
+	
+	width : 350px;
+	box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+	
+	background: #fff;
+	padding: 25px;
+	margin: 7% auto 0 ;
+	text-align: center;
+	border-style: groove;
+
+}
+.form h1{
+	color :darkmagenta;
+	margin-bottom: 25px;
+}
+.box{
+	border-radius: 10px;
+	padding: 10px;
+	width:300px;
+	margin: 5px;
+	border : 1px solid black;
+}
+.box1{
+	width : 301px;
+	padding : 10px;
+	margin: 5px;
+	border-radius: 11px;
+	font-size: 18px;
+    border : 1px solid black;
+    background-image: linear-gradient(to right, rgba(236, 75, 196, 0.642),rgba(242, 90, 186, 0.751),#e05da0);
+    cursor: pointer;
+}
+</style>
+<script>
+	function checkPassword(form) {
+		password1 = form.password1.value;
+		password2 = form.password2.value;
+		if (password1 != password2) {
+			alert ("\nPassword did not match: Please try again...")
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="form">
+		<h1 align="center">SIGN UP</h1>
+		<form method='get' action="/signupsubmit" onSubmit = "return checkPassword(this)">
+			<input type="email" class="box" placeholder="Enter email" name=mail required><br><br>
+			<input type="text" class="box" placeholder="Enter name" name= Name required><br><br>
+			<input type="number" class="box" placeholder="Enter mobile No." name=mobileNo required><br><br>
+			<input type="password" class="box" placeholder="Enter password" name=password1 required><br><br>
+			<input type="password" class="box" placeholder="Re-enter password" name=password2 required><br><br>
+			<input type="checkbox" required>I agree to the terms & conditions<br><br>
+			<input type="submit" class="box1" name = Submit>
+		</form>
+	</div>
+</body>
+</html>
+
